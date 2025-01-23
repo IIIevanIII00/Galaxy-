@@ -1,0 +1,12 @@
+local Credits =
+    coroutine.create(
+    function()
+            while wait(8) do
+                local A_1 = "Made by BLK_Galaxie add on dc to join server"
+                local A_2 = "All"
+                local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+                Event:FireServer(A_1, A_2)
+            end
+        end
+    end
+)
